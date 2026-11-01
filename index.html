@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ABES Engineering College</title>
+	<style>
+		:root {
+			--navy: #102a43;
+			--blue: #1769aa;
+			--pale: #f1f6fb;
+			--text: #243b53;
+		}
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			line-height: 1.6;
+			color: var(--text);
+			background: #fff;
+		}
+		header {
+			padding: 2rem 1rem;
+			text-align: center;
+			color: white;
+			background: linear-gradient(120deg, var(--navy), var(--blue));
+		}
+		header h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); }
+		header p { margin: .4rem 0 0; }
+		nav { padding: .8rem 1rem; text-align: center; background: var(--navy); }
+		nav a { margin: 0 .8rem; color: white; text-decoration: none; font-weight: 700; }
+		nav a:hover { text-decoration: underline; }
+		main { width: min(100% - 2rem, 1000px); margin: 2rem auto; }
+		section { margin-bottom: 2.5rem; }
+		h2 { color: var(--navy); border-bottom: 2px solid #d9e8f5; padding-bottom: .4rem; }
+		.courses { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; }
+		.course-card { padding: 1rem 1.2rem; background: var(--pale); border-radius: 8px; }
+		.course-card h3 { margin-top: 0; color: var(--blue); }
+		table { width: 100%; border-collapse: collapse; text-align: center; }
+		caption { margin-bottom: .7rem; font-weight: 700; color: var(--navy); }
+		th, td { border: 1px solid #b8c9d9; padding: .7rem .45rem; }
+		thead th { color: white; background: var(--navy); }
+		tbody th { background: var(--pale); }
+		.break { background: #e8f3fc; font-weight: 700; }
+		footer { padding: 1rem; text-align: center; color: white; background: var(--navy); }
+		@media (max-width: 600px) {
+			nav a { display: inline-block; margin: .2rem .45rem; }
+			th, td { padding: .45rem .25rem; font-size: .85rem; }
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>ABES Engineering College</h1>
+		<p>Learning today, leading tomorrow</p>
+	</header>
+
+	<nav aria-label="Main navigation">
+		<a href="#about">About Us</a>
+		<a href="#courses">Courses</a>
+		<a href="#timetable">Weekly Timetable</a>
+	</nav>
+
+	<main>
+		<section id="about">
+			<h2>About Us</h2>
+			<p>ABES Engineering College is a learning community focused on engineering, technology, and innovation. We support students through strong academic programs, practical experiences, and opportunities to grow into thoughtful professionals.</p>
+		</section>
+
+		<section id="courses">
+			<h2>Courses</h2>
+			<div class="courses">
+				<article class="course-card">
+					<h3>Computer Science</h3>
+					<ul>
+						<li>Core subjects
+							<ul><li>Data Structures</li><li>Database Systems</li><li>Operating Systems</li></ul>
+						</li>
+						<li>Specializations
+							<ul><li>Artificial Intelligence</li><li>Cloud Computing</li></ul>
+						</li>
+					</ul>
+				</article>
+				<article class="course-card">
+					<h3>Electronics &amp; Communication</h3>
+					<ul>
+						<li>Core subjects
+							<ul><li>Digital Electronics</li><li>Communication Systems</li><li>Microprocessors</li></ul>
+						</li>
+						<li>Laboratories
+							<ul><li>Embedded Systems</li><li>Signal Processing</li></ul>
+						</li>
+					</ul>
+				</article>
+				<article class="course-card">
+					<h3>Mechanical Engineering</h3>
+					<ul>
+						<li>Core subjects
+							<ul><li>Thermodynamics</li><li>Manufacturing Processes</li><li>Machine Design</li></ul>
+						</li>
+						<li>Practical learning
+							<ul><li>CAD/CAM</li><li>Workshop Practice</li></ul>
+						</li>
+					</ul>
+				</article>
+			</div>
+		</section>
+
+		<section id="timetable">
+			<h2>Weekly Timetable</h2>
+			<table>
+				<caption>Sample First-Year Class Schedule</caption>
+				<thead>
+					<tr><th scope="col">Day</th><th scope="col">9:00–10:00</th><th scope="col">10:00–11:00</th><th scope="col">11:00–12:00</th><th scope="col">12:00–1:00</th><th scope="col">1:00–2:00</th></tr>
+				</thead>
+				<tbody>
+					<tr><th scope="row">Monday</th><td rowspan="2">Mathematics</td><td>Physics</td><td>Programming</td><td rowspan="5" class="break">Lunch<br>Break</td><td>Workshop</td></tr>
+					<tr><th scope="row">Tuesday</th><td colspan="2">Programming Lab</td><td>English</td></tr>
+					<tr><th scope="row">Wednesday</th><td>Physics</td><td>Mathematics</td><td>Engineering Drawing</td><td>Library</td></tr>
+					<tr><th scope="row">Thursday</th><td colspan="2">Electronics Lab</td><td>Mathematics</td><td>Programming</td></tr>
+					<tr><th scope="row">Friday</th><td>English</td><td>Physics</td><td>Seminar</td><td>Sports</td></tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
+s
+	<footer><p>&copy; 2025 ABES Engineering College. All rights reserved.</p></footer>
+</body>
+</html>
